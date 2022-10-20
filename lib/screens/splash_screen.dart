@@ -1,6 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+import 'package:project_pas/utils/constant.dart';
 import 'home.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -32,29 +32,36 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Styles.primaryColor,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
-            Icon(
-              Icons.home,
-              size: 100,
-              color: Colors.blue,
-            ),
-
-            const Padding(
-              padding: EdgeInsets.only(top: 20.0),
-            ),
-
-            const Text(
-              'Welcome Home',
-              style: TextStyle(
-                fontSize: 20,
-                color: Colors.blue,
+            Container(
+              width: 100,
+              height: 100,
+              padding: EdgeInsets.all(20),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+                color: Styles.white,
+              ),
+              child: Center (
+                  child: Image.asset("assets/images/logo-brown.png")
               ),
             ),
-          ]
+            SizedBox(
+              height: 20,
+            ),
+            Text(
+              "Glow App",
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+                color: Styles.white,
+              ),
+            )
+          ],
         )
       )
     );
