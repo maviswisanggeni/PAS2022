@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_pas/screens/splash_screen.dart';
+import 'package:project_pas/screens/onboarding_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(),
+      home: OnBoardingScreen(),
     );
   }
 }
