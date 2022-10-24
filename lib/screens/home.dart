@@ -107,7 +107,7 @@ class HomePage extends StatelessWidget {
                             height: 70,
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(20),
-                              color: Styles.primaryColor,
+                              color: Colors.brown[50],
                             ),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -125,12 +125,12 @@ class HomePage extends StatelessWidget {
                                       Text(
                                         "Product Name",
                                         style: TextStyle(
-                                            color: Colors.white,),
+                                            color: Colors.black,),
                                       ),
                                       Text(
                                         '50 \$',
                                         style: TextStyle(
-                                          color: Colors.white,
+                                          color: Colors.black,
                                           fontSize: 16,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -154,8 +154,8 @@ class HomePage extends StatelessWidget {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Icon(
-                                        Icons.shopping_cart,
-                                        color: Colors.white,
+                                        Icons.shopping_cart_rounded,
+                                        color: Colors.black,
                                         size: 20,
                                       ),
                                     ],
