@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_pas/components/search_bar.dart';
 import 'package:project_pas/utils/constant.dart';
 import 'package:responsive_grid_list/responsive_grid_list.dart';
 
@@ -52,7 +53,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
             // add search bar
-
+            SearchBar(),
           ]
         )
       ),

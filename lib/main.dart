@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_pas/components/navigation_bar.dart';
 import 'package:project_pas/screens/onboarding_screen.dart';
 import 'package:project_pas/screens/home.dart';
 
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
-      home: HomePage(),
+      home: Navigation(),
     );
   }
 }
