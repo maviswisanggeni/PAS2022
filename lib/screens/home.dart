@@ -52,7 +52,6 @@ class HomePage extends StatelessWidget {
               ],
             ),
             // add search bar
-
           ]
         )
       ),
